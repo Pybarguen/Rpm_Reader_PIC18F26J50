@@ -64,7 +64,7 @@ float rpm_real;
 #define _XTAL_FREQ 16000000 //16MHZ
 #include <stdio.h>
 #include "Fonts.h"
-//#include "Image.h"//Image's Buffer 
+#include "Image.h"//Image's Buffer 
 #include "PIC2XJ50_SPI.h"//SPI library
 #include "ST7735.h"//Basic ST7735 Library
 
@@ -90,10 +90,14 @@ void __interrupt(high_priority) tcInt(void)
                   }
           
           //After Five second the PWM works and the MOTOR is ON          
-          if(seconds>=5)
+          if(seconds>=3)
           {
          TMR2ON = 1;
-         CCPR1L = 0b00111111;  
+         CCPR1L = 0b01000000;  
+          }
+          if(seconds>=4)
+          {
+                CCPR1L = 0b00101000;  
           }
           //MOTOR ON
           
@@ -187,7 +191,7 @@ void main(void) {
  
    
     ST7735S_Fill_display(Background_T);
-  //  ST7735S_Fill_image(Image_array);
+  ST7735S_Fill_image(Image_array);
       while(1)
     {
      
