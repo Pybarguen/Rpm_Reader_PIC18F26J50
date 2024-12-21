@@ -9,7 +9,7 @@ Download the files a create a new project on **MPLAB IDE**.
 
 ## Materials List
 
-* 1 -PIPIC18F26J50
+* 1 -PIC18F26J50
 * 1- ST7735 128X160 TFT Dispplay
 * 1- F249 Speed sensor module
 * 1- FF030 DC Motor 3V - 6V
@@ -64,7 +64,18 @@ I used a Laser Machine for cut the parts on MDF 2.5mm WOOD, you can see the part
 
 ![3D Motor Support](https://github.com/user-attachments/assets/50854ce8-515f-40ed-968b-b2dcb6f4151a)
 
+## **How to Run**
+ If you want to run the code on the microcontroller quickly Download **.Hex** and upload the Program on the microcontroller Using **Pickit Software**, you need to Know the **PIC18F26J50** needs a basic circuit for work, the basic circuit is on the PIC18F26J50 Lite Develoment Board uploaded on this project, if you want some information about this click on this page:
+ 
+ https://www.northernsoftware.com/dev/pic18f/pic18f26j50.htm
 
+![PIC18F26J50_BasicCircuit](https://github.com/user-attachments/assets/8f1b73cd-9c67-4d50-89d6-dbeb613decd1)
+
+You can check the circuit using each module for example connect first the **PIC18F26J50** with the **ST7735 TFT Display** and test how to work, then make the same add other module for example **F249 Speed sensor module**
+
+**Connect the circuit using the electronic technical planes on your protoboard**
+
+Full information can be found on the Wiki Setion
 
 
 
