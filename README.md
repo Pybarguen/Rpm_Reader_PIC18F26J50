@@ -1,8 +1,6 @@
 # **RPM Reader Using Encoder Sensor and PIC18F26J50**
 
-![Photography](https://github.com/user-attachments/assets/e3d4f1f7-689b-4edd-9701-db6b00baab19)
-
-![Photography2](https://github.com/user-attachments/assets/da7294c1-472d-47f4-94a6-afed8e051eb5)
+![Photography](https://github.com/user-attachments/assets/8eab8f1d-283b-48e4-8397-1f29b2997110)
 
 
 Download the files a create a new project on **MPLAB IDE**.
