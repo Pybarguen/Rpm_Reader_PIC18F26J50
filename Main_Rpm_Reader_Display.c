@@ -89,16 +89,39 @@ void __interrupt(high_priority) tcInt(void)
                       value = 0;
                   }
           
-          //After Five second the PWM works and the MOTOR is ON          
-          if(seconds>=3)
+          //After three second the PWM works and the MOTOR is ON          
+          if(seconds>=3 && seconds <7)
           {
          TMR2ON = 1;
-         CCPR1L = 0b01000000;  
+         CCPR1L = 0b00011111;  
           }
-          if(seconds>=4)
+          
+         // Increment the duty cycle every 7 seconds
+          if(seconds>=7 && seconds <13)
           {
-                CCPR1L = 0b00101000;  
+                CCPR1L = 0b01000000;  
           }
+          
+           if(seconds>=13 && seconds < 20)
+          {
+                CCPR1L = 0b01100000;  
+          }
+           if(seconds>=20 && seconds <27 )
+          {
+                CCPR1L = 0b00111001;  
+          }
+          
+          
+          //Turn Off PWM
+            if(seconds>=27)
+          {
+                 CCPR1L = 0b00000000;  
+                
+                 
+          }
+           
+        
+       
           //MOTOR ON
           
           //RESET TIMER 1
@@ -191,7 +214,7 @@ void main(void) {
  
    
     ST7735S_Fill_display(Background_T);
-  ST7735S_Fill_image(Image_array);
+    ST7735S_Fill_image(Image_array);
       while(1)
     {
      
