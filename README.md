@@ -3,6 +3,8 @@
 ![Photography](https://github.com/user-attachments/assets/8eab8f1d-283b-48e4-8397-1f29b2997110)
 
 
+**The objetive of this project is to change the speed of a motor using the PWM and read the RPM using a sensor encoder**
+
 Download the files a create a new project on **MPLAB IDE**.
 
 ## Materials List
@@ -14,7 +16,8 @@ Download the files a create a new project on **MPLAB IDE**.
 * 1- AMS1117 3.3 Voltaje regulator
 * 1- Button N.O
 * 1- Mosfet IRF634A
-* 2- 2N3904 or 2N2222 Transistor
+* 1- 2N3904 or 2N2222 Transistor
+* 1- PC817 optocoupler
 * 1- Pickit2 or recent version
 * 2- capacitor 10uF
 * 2- 1N4004 diode
