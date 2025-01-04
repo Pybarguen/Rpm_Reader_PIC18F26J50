@@ -48,6 +48,11 @@ This is a basic PCB board for test faster your prototypes using PIC18F26J50 micr
 
 ![3DCircuit](https://github.com/user-attachments/assets/e5a6772c-0f19-4dc7-87ed-727d447a20ed)
 
+**IF You can get this board in PCBWAY**
+click here
+
+
+<a href="https://www.pcbway.com/project/shareproject/PIC16F26J50_Lite_Develoment_Board_c47685f1.html"><img src="https://www.pcbway.com/project/img/images/frompcbway-1220.png" alt="PCB from PCBWay" /></a>
 
 **Updating More Information about this setion**
 
